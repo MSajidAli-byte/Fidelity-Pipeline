@@ -1,0 +1,6 @@
+{
+  "name": "Fidelity Pipeline - B2B Resume Engine",
+  "description": "Multi-stage AI pipeline for B2B resume tailoring, hallucination auditing, and fidelity scoring.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

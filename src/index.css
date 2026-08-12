@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@layer base {
+  /* Dark Mode Default Variables */
+  :root {
+    --bg-app: #050505;
+    --bg-card: #0a0a0c;
+    --bg-card-hover: #121215;
+    --bg-input: #050505;
+    --border-color: #27272a;
+    --text-main: #f4f4f5;
+    --text-muted: #a1a1aa;
+    --text-subtle: #71717a;
+    --nav-bg: #050505;
+  }
+
+  /* Light Theme Class */
+  html.light, body.light {
+    --bg-app: #f8fafc;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f1f5f9;
+    --bg-input: #ffffff;
+    --border-color: #cbd5e1;
+    --text-main: #0f172a;
+    --text-muted: #475569;
+    --text-subtle: #64748b;
+    --nav-bg: #ffffff;
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+  }
+
+  html.light .bg-[#050505] {
+    background-color: #f8fafc !important;
+  }
+
+  html.light .bg-[#0a0a0c] {
+    background-color: #ffffff !important;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05) !important;
+  }
+
+  html.light .border-zinc-800,
+  html.light .border-zinc-800\/90,
+  html.light .border-zinc-800\/80 {
+    border-color: #cbd5e1 !important;
+  }
+
+  html.light .border-zinc-700 {
+    border-color: #94a3b8 !important;
+  }
+
+  /* Do not force .text-white to dark text because primary buttons like bg-blue-600 text-white require white text! */
+  html.light .text-zinc-100,
+  html.light .text-zinc-200 {
+    color: #0f172a !important;
+  }
+
+  html.light .text-zinc-300 {
+    color: #334155 !important;
+  }
+
+  html.light .text-zinc-400 {
+    color: #475569 !important;
+  }
+
+  html.light .text-zinc-500 {
+    color: #64748b !important;
+  }
+
+  html.light .bg-zinc-900,
+  html.light .bg-zinc-900\/60 {
+    background-color: #f1f5f9 !important;
+  }
+
+  html.light .bg-zinc-800 {
+    background-color: #e2e8f0 !important;
+  }
+
+  html.light textarea,
+  html.light input[type="text"] {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    border-color: #cbd5e1 !important;
+  }
+
+  html.light select option {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+  }
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  header, footer, nav, button, .no-print {
+    display: none !important;
+  }
+  .print-resume-canvas {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}

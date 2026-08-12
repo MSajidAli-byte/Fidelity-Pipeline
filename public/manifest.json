@@ -1,0 +1,18 @@
+{
+  "short_name": "FidelityResume",
+  "name": "Fidelity Pipeline - AI Resume Auditor & Generator",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "display": "standalone",
+  "orientation": "any",
+  "description": "Anti-Hallucination & Anti-Cloning Resume Infrastructure. Works offline for viewing generated resumes.",
+  "categories": ["productivity", "business", "utilities"]
+}
